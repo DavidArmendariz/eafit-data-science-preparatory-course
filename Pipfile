@@ -1,0 +1,13 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+jupyterlab = "~=3.6.3"
+numpy = "~=1.24.3"
+
+[dev-packages]
+
+[requires]
+python_version = "3.11"
