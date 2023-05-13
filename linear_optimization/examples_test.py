@@ -1,6 +1,7 @@
 from pulp import value
 from .examples import example1
 
+
 def test_example1():
     x, y, problem = example1()
     assert value(x) == 2

@@ -1,5 +1,6 @@
 from pulp import LpProblem, LpStatus, value
 
+
 def solve_problem(problem: LpProblem):
     solution = problem.solve()
     print(f"Solution status: {LpStatus[solution]}")

@@ -1,8 +1,9 @@
 import numpy as np
 
+
 def riemann_int(f, lower_bound, upper_bound, partitions):
     if not callable(f):
-        raise ValueError('f must be a function of one variable')
+        raise ValueError("f must be a function of one variable")
     a = lower_bound
     b = upper_bound
     n = partitions
@@ -11,10 +12,11 @@ def riemann_int(f, lower_bound, upper_bound, partitions):
     xj = a + j * h
     approx = np.sum(f(xj) * h)
     return approx
-    
+
+
 def monte_carlo_int(f, lower_bound, upper_bound, n):
     if not callable(f):
-        raise ValueError('f must be a function of one variable')
+        raise ValueError("f must be a function of one variable")
     a = lower_bound
     b = upper_bound
     x = np.linspace(a, b, 1000)
@@ -26,20 +28,22 @@ def monte_carlo_int(f, lower_bound, upper_bound, n):
     p = np.sum(y_random < f(x_random))
     return rectangle_area * (p / n)
 
+
 def midpoint_int(f, lower_bound, upper_bound, n):
     if not callable(f):
-        raise ValueError('f must be a function of one variable')
+        raise ValueError("f must be a function of one variable")
     a = lower_bound
     b = upper_bound
     h = (b - a) / n
     j = list(range(1, n))
     xj = [a + j[i] * h for i in range(len(j))]
-    approx = sum([f(x + (h/2)) * h for x in xj])
+    approx = sum([f(x + (h / 2)) * h for x in xj])
     return approx
+
 
 def trapezoid_int(f, lower_bound, upper_bound, n):
     if not callable(f):
-        raise ValueError('f must be a function of one variable')
+        raise ValueError("f must be a function of one variable")
     a = lower_bound
     b = upper_bound
     h = (b - a) / n
