@@ -1,4 +1,4 @@
-from integration.examples import example1
+from .examples import example1
 from pytest import approx
 
 def test_example1():

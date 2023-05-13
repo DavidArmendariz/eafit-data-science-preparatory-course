@@ -1,4 +1,4 @@
-from linear_optimization.main import solve_problem
+from .solver import solve_problem
 from pulp import LpProblem, LpMaximize, LpVariable
 
 def example1():

@@ -1,5 +1,5 @@
 from pulp import value
-from linear_optimization.examples import example1
+from .examples import example1
 
 def test_example1():
     x, y, problem = example1()

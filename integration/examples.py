@@ -1,4 +1,4 @@
-from integration.main import riemann_int, monte_carlo_int
+from .main import riemann_int, monte_carlo_int
 
 def example1():
     def f(x):
