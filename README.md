@@ -1,21 +1,35 @@
-# Curso preparatorio de Data Science
+# Data Science preparatory course
 
-## Prerrequisitos
+## Prerrequisites
 
 * Pyenv
 * Pipenv
 
-Una vez instalado pipenv, crear el ambiente virtual:
+Once you installed pipenv, create the virtual environment:
 
 ```terminal
 pipenv install
 ```
 
-## Setup en VSCode
+## Setup in VSCode
 
-* En la paleta de comandos, seleccionar el interpretador de Python. En este caso será el generado por pipenv.
+* Choose the correct Python interpreter, which should be the one created by Pipenv.
 
 ## Tests
 
-* Ejecutar el shell de Pipenv con `pipenv shell` y luego correr `pytest`.
-* Para correr tests e imprimir los outputs: `pytest -s`
+* Run `pipenv shell` and then `pytest`.
+* If you want to show the output of print statements, run it like this: `pytest -s`
+
+## How to run files
+
+* This project is comprised of packages. To run an individual module within a package, you have to do it like this:
+
+```terminal
+python -m package.module
+```
+
+Example:
+
+```terminal
+python -m linear_optimization.examples
+```
