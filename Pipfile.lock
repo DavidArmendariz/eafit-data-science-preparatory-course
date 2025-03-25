@@ -855,12 +855,12 @@
         },
         "pulp": {
             "hashes": [
-                "sha256:327ba7a0d33cb7d4330005eed2b58f0d19391ca96d15f6546fe3621eb86ce341",
-                "sha256:7e57cd4eb145bdca80214acb07315f03583dd1c00cc8f24f91bf037649f93eb6"
+                "sha256:300a330e917c9ca9ac7fda6f5849bbf30d489c368117f197a3e3fd0bc1966d95",
+                "sha256:ad9d46afaf78a708270a2fa9b38e56536584c048dfbd7a6dbc719abee1051261"
             ],
             "index": "pypi",
             "markers": "python_version >= '3.7'",
-            "version": "==3.0.2"
+            "version": "==3.1.1"
         },
         "pure-eval": {
             "hashes": [
