@@ -947,12 +947,12 @@
         },
         "pulp": {
             "hashes": [
-                "sha256:300a330e917c9ca9ac7fda6f5849bbf30d489c368117f197a3e3fd0bc1966d95",
-                "sha256:ad9d46afaf78a708270a2fa9b38e56536584c048dfbd7a6dbc719abee1051261"
+                "sha256:7eb99b9ce7beeb8bbb7ea9d1c919f02f003ab7867e0d1e322f2f2c26dd31c8ba",
+                "sha256:dd6ad2d63f196d1254eddf9dcff5cd224912c1f046120cb7c143c5b0eda63fae"
             ],
             "index": "pypi",
-            "markers": "python_version >= '3.7'",
-            "version": "==3.1.1"
+            "markers": "python_version >= '3.9'",
+            "version": "==3.3.0"
         },
         "pure-eval": {
             "hashes": [
